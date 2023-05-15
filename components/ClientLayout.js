@@ -25,7 +25,7 @@ export default function ClientLayout({ children }) {
 
       <div className="relative mt-[100px] h-full">{children}</div>
 
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
