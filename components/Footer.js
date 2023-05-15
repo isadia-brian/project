@@ -13,7 +13,7 @@ import { BsInstagram } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-green-800 h-fit md:h-fit py-14  md:py-16 md:pb-1 ">
+    <footer className="w-full bg-green-800 h-full md:h-fit py-4">
       <div className="mx-6 md:mx-20 pb-6 flex flex-col md:flex-row space-y-16 md:space-y-0 md:justify-between  text-white border-b-[0.2px] border-amber-50 ">
         <div className="flex flex-col space-y-6">
           <div>
@@ -93,7 +93,7 @@ const Footer = () => {
         </div>
         </div>
       </div>
-      <div className="pl-6 md:pl-0 md:mx-20 py-4 text-white">
+      <div className="pl-6 md:pl-0 md:mx-20 pt-2 text-white">
         <p className="text-xs md:text-[12px]">
           <span>&copy;</span> 2023 Silent Palms Villa - All rights reserved
         </p>

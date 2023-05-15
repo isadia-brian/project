@@ -1,8 +1,14 @@
 import Image from "next/image";
-import { Poppins } from "next/font/google";
+import { Poppins, Karla } from "next/font/google";
 import Footer from "./Footer";
 import Hero from "./Hero";
 import Navbar from "./Navbar";
+
+
+const karla = Karla({
+    subsets: ["latin"],
+    weight: ["300", "400", "600", "700"],
+  });
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -11,12 +17,15 @@ const poppins = Poppins({
 
 export default function ClientLayout({ children }) {
   return (
-    <div className={`${poppins.className}`}>
-      <Navbar />
+    <div className={`${karla.className} text-[16px]`}>
+      <div className="fixed top-0 w-full z-10 bg-white border-b-[1px] border-green-800 shadow-md">
+        <Navbar />
+      </div>
+      
 
-      <div>{children}</div>
+      <div className="relative mt-[100px] h-full">{children}</div>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

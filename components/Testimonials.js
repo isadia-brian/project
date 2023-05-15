@@ -2,6 +2,7 @@ import localFont from "next/font/local";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import {FaQuoteLeft} from 'react-icons/fa'
+import Heading from "./Heading";
 const melodrama = localFont({
   src: "../public/fonts/melodrama/Melodrama-Semibold.ttf",
 });
@@ -9,22 +10,23 @@ const melodrama = localFont({
 
 
 const Testimonials = () => {
-  return <div className="w-[900px] mx-auto py-12 h-full mb-12">
-    <div className="relative">
-      <h1 className={`${melodrama.className} md:text-[50px]`}>
-        Testimonials
-      </h1>
-      <div className="bg-green-800 h-2 w-12 absolute left-0 bottom-1 -z-2"></div>
+  return <div className="w-full h-full mb-20 relative px-4">
+    <div className="relative w-full text-center py-10 md:py-20">
+      <Heading title="TESTIMONIALS"/>
+     
+      
       </div>
-    <div className="mt-16 flex gap-12 bg-green-50 p-4 ">
-        <div className="bg-green-800 h-[400px] min-w-[300px]"></div>
-        <div className=" w-full flex flex-col items-center justify-between">
-        <p className={`${melodrama.className}flex justify-between w-full text-4xl`}>
+    <div className="mb-20 flex items-center flex-col md:flex-row gap-12 bg-green-100 p-4 md:w-[70%] md:mx-auto">
+        <div className="md:h-[400px] h-[100px]  w-[100px] md:w-[400px] relative rounded-full md:rounded-none">
+          <Image src="/images/girl.jpg" alt="img" fill className="rounded-full md:rounded-none"/>
+        </div>
+        <div className=" w-full flex flex-col items-center justify-between -mt-12 md:-mt-0">
+        <p className={`${melodrama.className}flex justify-between w-full text-green-800 md:px-4 md:text-4xl`}>
             <FaQuoteLeft/>
         </p>
-        <p className="text-sm max-w-[600px] pr-12 ">we had a wonderful stay everything was superb 👌 Many thanks to Mr mwarabu and miss faith who made sure we were comfortable and we had Activities to do during our stay. We will definitely come back..</p>
+        <p className="md:text-[29px] md:max-w-[600px] md:px-12 ">We had a wonderful stay everything was superb 👌 Many thanks to Mr mwarabu and miss faith who made sure we were comfortable and we had Activities to do during our stay. We will definitely come back..</p>
         <div className="w-full flex justify-between">
-            <p className="font-bold">Grace</p>
+            <p className="font-bold md:px-12 mt-2 text-green-800">Grace</p>
         </div>
         </div>
        

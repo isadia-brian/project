@@ -9,48 +9,52 @@ import { BsFacebook } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
 import Image from "next/image";
 
+
+
+
 const Navbar = () => {
   const Links = [
     {
-      title: "HOME",
+      title: "Home",
       link: "/",
     },
     {
-      title: "ACCOMODATIONS",
+      title: "Accomodations",
       link: "/accomodation",
     },
+   
     {
-      title: "ABOUT",
-      link: "#",
+      title: "Activities",
+      link: "/",
     },
+   
+    
     {
-      title: "LOCATION",
-      link: "/location",
-    },
-    {
-      title: "RATES",
+      title: "Rates",
       link: "/rates",
     },
     {
-      title: "GALLERY",
+      title: "Gallery",
       link: "/gallery",
     },
     {
-      title: "CONTACT",
+      title: "Contact",
       link: "/contact",
     },
     {
-      title: "FAQS",
-      link: "/faqs",
+      title: "Location",
+      link: "/location",
     },
-    {
-      title: "RESERVATION",
-      link: "/reservation",
-    },
+    
+    // {
+    //   title: "FAQS",
+    //   link: "/faqs",
+    // },
+    
   ];
   return (
     <div>
-      <div className="border-b-[0.8px] py-2 px-6 text-[12px] flex justify-between items-center">
+      <div className="border-b-[0.8px] py-2 w-full  text-[12px] flex justify-between items-center">
         <div className="flex items-center space-x-2 text-sm">
           <SlPhone className="text-sm" />
           <p className="text-xs">
@@ -69,8 +73,9 @@ const Navbar = () => {
           </Link>
         </div>
       </div>
-      <div className="flex items-center justify-between w-full px-6">
-        <div className="relative h-28 w-28 rounded-full">
+      <div className="flex items-center justify-between w-full">
+        <div className="flex items-center space-x-3">
+        <div className="relative h-16 w-16 rounded-full">
           <Image
             src="/images/logo.jpeg"
             alt="logo"
@@ -78,19 +83,25 @@ const Navbar = () => {
             className="rounded-full"
           />
         </div>
+        <div className="max-w-[200px]">
+          
+          <h5 className="md:text-[29px] font-extrabold leading-none text-green-800">SILENT PALMS VILLAS DIANI</h5>
+        </div>
+        </div>
+       
         <div className="flex items-center space-x-12">
-          <ul className="text-sm flex items-center space-x-6 font-bold">
+          <ul className="text-[14px] items-center space-x-10 hidden md:flex">
             {Links.splice(0, 8).map(({ title, link }, index) => {
               return (
                 <li key={index}>
-                  <Link href={link}>{title}</Link>
+                  <Link href={link} className={` text-[15px] text-green-800 capitalize`}>{title}</Link>
                 </li>
               );
             })}
           </ul>
           <Link
             href="/reservation"
-            className="rounded-full text-white bg-green-800 px-4 py-3"
+            className=" text-white bg-green-800 px-4 py-3"
           >
             RESERVATION
           </Link>
