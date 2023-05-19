@@ -54,7 +54,7 @@ const Navbar = () => {
   ];
   return (
     <div>
-      <div className="border-b-[0.8px] py-2 w-full  text-[12px] flex justify-between items-center">
+      <div className="border-b-[0.8px] py-2 px-4 w-full  text-[12px] flex justify-between items-center">
         <div className="flex items-center space-x-2 text-sm">
           <SlPhone className="text-sm" />
           <p className="text-xs">
@@ -73,7 +73,7 @@ const Navbar = () => {
           </Link>
         </div>
       </div>
-      <div className="flex items-center justify-between w-full">
+      <div className="flex items-center justify-between w-full px-4">
         <div className="flex items-center space-x-3">
         <div className="relative h-16 w-16 rounded-full">
           <Image
@@ -85,7 +85,7 @@ const Navbar = () => {
         </div>
         <div className="max-w-[200px]">
           
-          <h5 className="md:text-[29px] font-extrabold leading-none text-green-800">SILENT PALMS VILLAS DIANI</h5>
+          <h5 className="md:text-[22px] font-extrabold leading-none text-green-800">SILENT PALMS VILLAS DIANI</h5>
         </div>
         </div>
        

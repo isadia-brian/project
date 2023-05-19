@@ -38,7 +38,7 @@ const Why = () => {
         </div>
         <div className=" md:h-56">
             <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 items-center space-x-3">
-                <p className="text-5xl text-green-800 font-thin"><IoLocation/></p>
+                <p className="text-5xl text-yellow-400 font-thin"><IoLocation/></p>
                 <h4 className={`${cormorant.className} text-green-800 text-[20px] md:text-[28px]  font-bold`}>PERFECT LOCATION</h4>
                 
             </div>
@@ -74,7 +74,7 @@ const Why = () => {
         </div>
         <div className=" md:h-56">
             <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 items-center space-x-3">
-                <p className="text-5xl text-green-800 font-thin"><GiPalmTree/></p>
+                <p className="text-5xl text-yellow-400 font-thin"><GiPalmTree/></p>
                 <h4 className={`${cormorant.className} text-green-800 text-[20px] md:text-[28px]  font-bold`}>SERENE ENVIRONMENT</h4>
                 
             </div>
@@ -83,7 +83,7 @@ const Why = () => {
 
         <div className=" md:h-56">
             <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 items-center space-x-3">
-                <p className="text-5xl text-green-800 font-thin"><IoBedSharp/></p>
+                <p className="text-5xl text-yellow-400 font-thin"><IoBedSharp/></p>
                 <h4 className={`${cormorant.className} text-green-800 text-[20px] md:text-[28px]  font-bold`}>COZY COMFORT</h4>
                 
             </div>

@@ -21,7 +21,7 @@ const Testimonials = () => {
           <Image src="/images/girl.jpg" alt="img" fill className="rounded-full md:rounded-none"/>
         </div>
         <div className=" w-full flex flex-col items-center justify-between -mt-12 md:-mt-0">
-        <p className={`${melodrama.className}flex justify-between w-full text-green-800 md:px-4 md:text-4xl`}>
+        <p className={`${melodrama.className}flex justify-between w-full text-yellow-400 md:px-4 md:text-2xl`}>
             <FaQuoteLeft/>
         </p>
         <p className="md:text-[29px] md:max-w-[600px] md:px-12 ">We had a wonderful stay everything was superb 👌 Many thanks to Mr mwarabu and miss faith who made sure we were comfortable and we had Activities to do during our stay. We will definitely come back..</p>
